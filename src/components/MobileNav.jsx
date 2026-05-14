@@ -88,8 +88,7 @@ export default function MobileNav() {
       </a>
 
       <a
-        href="https://wa.me/6281234567890"
-        target="_blank"
+        href="#contact"
         className="flex flex-col items-center text-gray-500 text-xs"
       >
         <MessageCircle size={22} />
