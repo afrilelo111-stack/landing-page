@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-5">
 
         <h1 className="text-2xl font-black text-blue-600">
-          PremiumStore
+          NoelStore
         </h1>
 
         {/* Desktop Menu */}

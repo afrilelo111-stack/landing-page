@@ -7,13 +7,42 @@ import {
   MessageCircle,
 } from "lucide-react";
 
+import { useEffect, useState } from "react";
+
 export default function MobileNav() {
+
+  const [show, setShow] = useState(true);
+
+  useEffect(() => {
+
+    let lastScroll = 0;
+
+    const handleScroll = () => {
+
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > lastScroll) {
+        setShow(false);
+      } else {
+        setShow(true);
+      }
+
+      lastScroll = currentScroll;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+
+  }, []);
+
   return (
     <div
-      className="
+      className={`
         md:hidden
         fixed
-        bottom-4
         left-1/2
         -translate-x-1/2
         z-50
@@ -27,7 +56,11 @@ export default function MobileNav() {
         py-4
         flex
         gap-8
-      "
+        transition-all
+        duration-300
+
+        ${show ? "bottom-4 opacity-100" : "-bottom-32 opacity-0"}
+      `}
     >
 
       <a
