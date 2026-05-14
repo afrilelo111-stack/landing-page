@@ -67,11 +67,14 @@ export default function Apps() {
             "
           >
             <Image
-                src={app.logo}
-                alt={app.name}
-                width={64}
-                height={64}
-                className="w-16 h-16 object-contain mx-auto mb-4"
+            src={app.logo}
+            alt={app.name}
+            width={64}
+            height={64}
+            priority // Menambahkan prioritas load
+            className="w-16 h-16 object-contain mx-auto mb-4"
+            // Tambahkan unoptimized jika kamu pakai format SVG yang kompleks di Vercel
+            unoptimized={app.logo.endsWith('.svg')} 
             />
             <h3 className="text-xl font-bold">{app.name}</h3>
           </div>
