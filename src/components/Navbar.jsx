@@ -7,12 +7,12 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="hidden md:block sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-200">
+    <nav className="hidden md:block sticky top-0 z-50 backdrop-blur-md bg-white/40 border-b border-gray-200">
 
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-5">
 
-        <h1 className="text-2xl font-black text-blue-600">
-          NoelStore
+        <h1 className="text-2xl font-black text-blue">
+          Leon <small className="text-blue-600"> X Shiro</small>
         </h1>
 
         {/* Desktop Menu */}
@@ -38,8 +38,7 @@ export default function Navbar() {
 
         {/* Desktop Button */}
         <a
-          href="https://wa.me/6281234567890"
-          target="_blank"
+          href="#contact"
           className="hidden md:block bg-blue-600 hover:bg-blue-700 transition text-white px-5 py-2 rounded-xl font-semibold"
         >
           Contact

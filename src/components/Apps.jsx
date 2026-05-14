@@ -1,36 +1,40 @@
+import Image from "next/image";
+
 const apps = [
   {
     name: "Netflix",
-    emoji: "🎬",
+    logo: "/apps/Netflix.png",
   },
   {
     name: "Spotify",
-    emoji: "🎵",
+    logo: "/apps/Spotify_icon.svg",
   },
   {
     name: "Disney+",
-    emoji: "⭐",
+    logo: "/apps/Disney+.png",
   },
   {
     name: "CapCut",
-    emoji: "✂️",
+    logo: "/apps/CapCut.png",
   },
   {
     name: "Canva",
-    emoji: "🎨",
+    logo: "/apps/canva.svg",
   },
   {
     name: "YouTube",
-    emoji: "▶️",
+    logo: "/apps/youtube.png",
   },
+  
   {
-    name: "Wink",
-    emoji: "🔥",
+    name: "ChatGPT",
+    logo: "/apps/ChatGPT.svg",
   },
+
   {
-    name: "Wibuku",
-    emoji: "📚",
-  },
+    name: "Iqiyi",
+    logo: "/apps/Iqiyi.svg",
+  }
 ];
 
 export default function Apps() {
@@ -62,7 +66,13 @@ export default function Apps() {
                 duration-300
             "
           >
-            <div className="text-4xl mb-4">{app.emoji}</div>
+            <Image
+                src={app.logo}
+                alt={app.name}
+                width={64}
+                height={64}
+                className="w-16 h-16 object-contain mx-auto mb-4"
+            />
             <h3 className="text-xl font-bold">{app.name}</h3>
           </div>
         ))}

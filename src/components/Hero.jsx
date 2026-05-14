@@ -16,7 +16,7 @@ export default function Hero() {
       >
 
         <p className="text-blue-600 font-semibold mb-4">
-          PREMIUM APPS STORE
+          Welcome to <span className="text-black">Leon <small className="text-blue-600"> X Shiro</small></span>
         </p>
 
         <h1 className="text-5xl md:text-7xl font-black leading-tight">
