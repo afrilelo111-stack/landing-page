@@ -15,7 +15,7 @@ const apps = [
   },
   {
     name: "CapCut",
-    logo: "/apps/CapCut.png",
+    logo: "/apps/Capcut.png",
   },
   {
     name: "Canva",
@@ -33,7 +33,7 @@ const apps = [
 
   {
     name: "Iqiyi",
-    logo: "/apps/IQIYI.svg",
+    logo: "/apps/iQIYI.svg",
   }
 ];
 
