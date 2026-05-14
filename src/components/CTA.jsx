@@ -14,18 +14,8 @@ export default function CTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          {/* Tombol Admin 1 */}
-          <a
-            href="https://wa.me/6285179898798"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center justify-center gap-2 w-full sm:w-auto bg-blue-600 hover:bg-blue-700 hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-4 rounded-2xl font-bold text-white shadow-lg shadow-blue-200"
-          >
-            <span>Chat Leon</span>
-            <span className="group-hover:translate-x-1 transition-transform">→</span>
-          </a>
 
-          {/* Tombol Admin 2 */}
+          {/* Tombol Admin 1 */}
           <a
             href="https://wa.me/628995244338"
             target="_blank"
@@ -34,6 +24,17 @@ export default function CTA() {
           >
             <span>Chat Shiro</span>
             <span className="opacity-0 group-hover:opacity-100 transition-opacity">👋</span>
+          </a>
+
+          {/* Tombol Admin 2 */}
+          <a
+            href="https://wa.me/6285179898798"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center justify-center gap-2 w-full sm:w-auto bg-blue-600 hover:bg-blue-700 hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-4 rounded-2xl font-bold text-white shadow-lg shadow-blue-200"
+          >
+            <span>Chat Leon</span>
+            <span className="group-hover:translate-x-1 transition-transform">→</span>
           </a>
         </div>
 
