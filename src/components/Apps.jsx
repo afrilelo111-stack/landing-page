@@ -57,6 +57,9 @@ export default function Apps() {
                 hover:shadow-xl
                 transition
                 duration-300
+                hover:-translate-y-2
+                transition
+                duration-300
             "
           >
             <div className="text-4xl mb-4">{app.emoji}</div>

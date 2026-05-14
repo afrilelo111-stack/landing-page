@@ -7,7 +7,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-200">
+    <nav className="hidden md:block sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-200">
 
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-5">
 
