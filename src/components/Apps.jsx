@@ -19,11 +19,11 @@ const apps = [
   },
   {
     name: "Canva",
-    logo: "/apps/canva.svg",
+    logo: "/apps/Canva.svg",
   },
   {
     name: "YouTube",
-    logo: "/apps/youtube.png",
+    logo: "/apps/YouTube.png",
   },
   
   {
@@ -33,7 +33,7 @@ const apps = [
 
   {
     name: "Iqiyi",
-    logo: "/apps/Iqiyi.svg",
+    logo: "/apps/IQIYI.svg",
   }
 ];
 
