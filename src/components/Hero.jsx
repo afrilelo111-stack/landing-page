@@ -31,13 +31,13 @@ export default function Hero() {
 
         <div className="flex justify-center gap-4 mt-10 flex-wrap">
 
-          <button className="bg-blue-600 hover:bg-blue-700 transition px-8 py-4 rounded-xl font-semibold text-white">
+          <a href="#contact" className="bg-blue-600 hover:bg-blue-700 transition px-8 py-4 rounded-xl font-semibold text-white">
             Order Sekarang
-          </button>
+          </a>
 
-          <button className="border border-gray-300 hover:border-blue-500 transition px-8 py-4 rounded-xl">
+          <a href="#pricing" className="border border-gray-300 hover:border-blue-500 transition px-8 py-4 rounded-xl">
             Lihat Pricelist
-          </button>
+          </a>
 
         </div>
 
